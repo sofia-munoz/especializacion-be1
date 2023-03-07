@@ -9,17 +9,17 @@ spring:
       discovery:
         locator:
           enabled: true
-      default-filters:
-        - name: FilterCustom
+#      default-filters:
+#        - name: FilterCustom
       routes:
-        - id: mscourse #identificador de la ruta
-          uri: lb://ms-course #URL donde se hará el redirect segun el predicado definido
-          predicates: #Reglas de analisis de request
-            - Path=/course/** #path de url de request a considerar
-        - id: mssubscription
-          uri: lb://ms-subscription
+        - id: msmovie
+          uri: lb://movies-service
           predicates:
-            - Path=/subscription/**              
+            - Path=/movies/**
+        - id: mscatalog
+          uri: lb://catalog-service
+          predicates:
+            - Path=/catalog/**
 
 info:
   app:
@@ -35,7 +35,8 @@ eureka:
     endpoint:
       gateway:
         enabled: true
-    endpoints: 
+    endpoints:
       web:
         exposure:
           include: gateway
+
