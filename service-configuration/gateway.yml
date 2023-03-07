@@ -13,7 +13,7 @@ spring:
 #        - name: FilterCustom
       routes:
         - id: msmovie
-          uri: lb://movies-service
+          uri: lb://movie-service
           predicates:
             - Path=/movies/**
         - id: mscatalog
