@@ -1,9 +1,17 @@
 server:
   port: ${PORT:${SERVER_PORT:0}}
+  
+idRandom: ${random.value}
 
 spring:
   application:
     name: catalog-service
+    
+  eureka:
+  instance:
+    hostname: localhost
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    
   datasource:
     url: jdbc:h2:mem:testdb
     username: sa
