@@ -9,10 +9,8 @@ spring:
       discovery:
         locator:
           enabled: true
-#      default-filters:
-#        - name: FilterCustom
       routes:
-        - id: catalog-service
+        - id: catalog
           uri: lb://catalog-service
           predicates:
             - Path=/catalog/**
