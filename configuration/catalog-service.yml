@@ -47,7 +47,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: circuitbreakers,circuitbreakerevents,health,info,ratelimiters,metrics
+        include: '*'
   health:
     circuitbreakers:
       enabled: true
@@ -67,3 +67,10 @@ resilience4j:
         waitDurationInOpenState: 15000
         permittedNumberOfCallsInHalfOpenState: 3
         automaticTransitionFromOpenToHalfOpenEnabled: true
+  retry:
+    instances:
+      subscription:
+        maxAttempts: 3
+        waitDuration: 1000
+        retryExceptions:
+          - feign.FeignException$InternalServerError
