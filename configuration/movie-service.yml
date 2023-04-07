@@ -17,7 +17,7 @@ spring:
     show-sql: true
     
 queue:
-  serie:
+  movie:
     name: MovieQueue
     
 message: hello from movie-service
