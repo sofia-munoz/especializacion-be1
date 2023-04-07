@@ -22,9 +22,7 @@ spring:
 queue:
   serie:
     name: SerieQueue
-    
-queue:
-  serie:
+  movie:
     name: MovieQueue
     
 message: hello from catalog-service
