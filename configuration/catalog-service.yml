@@ -22,10 +22,6 @@ spring:
 queue:
   serie:
     name: SerieQueue
-  exchange:
-    name: SerieExchange
-  routing:
-    key: SerieRoutingKey
     
 message: hello from catalog-service
 
