@@ -27,12 +27,6 @@ queue:
     
 message: hello from catalog-service
 
-management:
-  endpoints:
-    web:
-      exposure:
-        include: '*'
-
 eureka:
   instance:
     hostname: localhost
