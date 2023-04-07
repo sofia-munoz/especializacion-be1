@@ -14,7 +14,10 @@ spring:
       database: catalog
       port: 27018
       
-
+queue:
+  serie:
+    name: SerieQueue
+    
 message: hello from catalog-service
 
 management:
