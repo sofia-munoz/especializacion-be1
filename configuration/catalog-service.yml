@@ -6,11 +6,11 @@ idRandom: ${random.value}
 spring:
   application:
     name: catalog-service  
- rabbitmq:
-    username: guest
-    password: guest
-    host: localhost
-    port: 5672
+# rabbitmq:
+#    username: guest
+#    password: guest
+#    host: localhost
+#    port: 5672
   mongodb:
     embedded:
       version: 4.0.2
@@ -19,9 +19,9 @@ spring:
       database: test
       port: 27018
       
-queue:
-  serie:
-    name: SerieQueue
+#queue:
+#  serie:
+#    name: SerieQueue
 
 message: hello from catalog-service
 
