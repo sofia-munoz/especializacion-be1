@@ -52,7 +52,7 @@ management:
 resilience4j:
   circuitbreaker:
     instances:
-      subscription:
+      catalog:
         allowHealthIndicatorToFail: false
         registerHealthIndicator: true
         slidingWindowType: COUNT_BASED
@@ -63,7 +63,7 @@ resilience4j:
         automaticTransitionFromOpenToHalfOpenEnabled: true
   retry:
     instances:
-      subscription:
+      catalog:
         maxAttempts: 3
         waitDuration: 1000
         retryExceptions:
