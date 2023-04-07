@@ -23,6 +23,10 @@ queue:
   serie:
     name: SerieQueue
     
+queue:
+  serie:
+    name: MovieQueue
+    
 message: hello from catalog-service
 
 management:
