@@ -11,7 +11,7 @@ spring:
       version: 4.0.2
   data:
     mongodb:
-      database: test2
+      database: catalog
       port: 27018
       
 
