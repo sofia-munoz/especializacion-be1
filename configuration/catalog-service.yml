@@ -22,6 +22,8 @@ spring:
 queue:
   serie:
     name: SerieQueue
+  exchange:
+    name: SerieExchange
     
 message: hello from catalog-service
 
