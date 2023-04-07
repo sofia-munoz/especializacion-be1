@@ -66,5 +66,4 @@ resilience4j:
       getGenreOnline:
         maxAttempts: 3
         waitDuration: 1000
-        retryExceptions:
-          - feign.FeignException$InternalServerError
+        retryExceptions:[]
