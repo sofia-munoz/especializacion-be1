@@ -15,7 +15,11 @@ spring:
     hibernate.ddl-auto: update
     generate-ddl: true
     show-sql: true
-
+    
+queue:
+  serie:
+    name: MovieQueue
+    
 message: hello from movie-service
 
 management:
